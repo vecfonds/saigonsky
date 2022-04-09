@@ -1,0 +1,147 @@
+/* body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eeff00;
+} */
+
+/* *{
+    
+        margin: 0;
+        padding: 0;
+         box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+ 
+} */
+
+/* body{
+    background-color: rgb(77, 213, 255);
+    display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+} */
+
+.box2__{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 400px; */
+}
+    
+.card__effect2{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px 25px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__effect2:hover{
+    height: 400px;
+    margin: 0px 25px;
+}
+
+
+.card__effect2 .card__effect2_img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card__effect2 .card__effect2_img img {
+    width: 100%;
+    /* height: 100%; */
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.card__effect2:hover .card__effect2_img img {
+    opacity: 1;
+}
+
+.card__effect2:before
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+    Left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+}
+
+.card__effect2:after
+{
+   content: '';
+   position: absolute;
+   top: -2px;
+    Left: -2px;
+   right: -2px;
+   bottom: -2px;
+   background: #fff;
+   z-index: -1;
+   filter: blur(40px);
+}
+
+.card__effect2:before,
+.card__effect2:after{
+background: linear-gradient(235deg,#89ffe0,#010615,#eebcd4);
+
+}
+.card__effect2:nth-child(2):before,
+.card__effect2:nth-child(2):after{
+    background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+}
+
+.card__effect2 .card__effect2_detail{
+    position: absolute;
+    bottom: 0;
+    Left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card__effect2:hover .card__effect2_detail{
+    opacity: 1;
+}
+
+
+.card__effect2 .card__effect2_detail h2
+{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    Line-height: 20px;
+    Letter-spacing: 1px;
+}
+.card__effect2 .card__effect2_detail h2 span
+{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    Letter-spacing: 2px;
+
+}
