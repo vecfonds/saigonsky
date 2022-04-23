@@ -5,6 +5,8 @@ import Footer from './component/footer';
 import Header from './component/header';
 import Home from './component/home';
 import Introduce from './component/introduce';
+import ProductDetails from './component/productDetails';
+import Products from './component/products';
 
 
 //learn
@@ -16,10 +18,10 @@ import CardEffect2 from './component/learn/cardeffect2';
 
 function App() {
   return (
-      <div>
-        <Header />
-        <Home />
-      </div>
+      <>
+      <Header />
+      <Home />
+      </>
   );
 }
 

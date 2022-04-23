@@ -5,52 +5,47 @@ import Cart from "./cart/cart";
 
 function Home() {
     return (
-        <div>
-            <div id="carouselExampleCrossfade" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-                <div class="text-typing">
-                    <h1>SAIGON SKY</h1>
+        <div className="slider">
+            <div className="text-content">
+                <div>
+                    <img src="/assets/images/S.png" alt="S-logo" />
                 </div>
-                <div class="text-typing">
+                <div>
+                    <h1>SaiGon Sky</h1>
                     <p>SPECIAL - GOOD - SMART</p>
                 </div>
-                <div class="carousel-indicators">
-                    <button
-                        type="button"
-                        data-mdb-target="#carouselExampleCrossfade"
-                        data-mdb-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button
-                        type="button"
-                        data-mdb-target="#carouselExampleCrossfade"
-                        data-mdb-slide-to="1"
-                        aria-label="Slide 2"
-                    ></button>
-                    <button
-                        type="button"
-                        data-mdb-target="#carouselExampleCrossfade"
-                        data-mdb-slide-to="2"
-                        aria-label="Slide 3"
-                    ></button>
-                </div>
+            </div>
+            <div id="carouselExampleTouch" class="carousel slide" data-mdb-touch="false">
+
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-mdb-interval="2000">
-                        <img src="/assets/images/bia1.png" class="d-block h-100" alt="Wild Landscape" />
+
+                    <div class="carousel-item active">
+                        <img src="/assets/images/bia1.png" class="d-block w-100" alt="Wild Landscape" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item" data-mdb-interval="2000">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block h-100" alt="Camera" />
+                    <div class="carousel-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item" data-mdb-interval="2000">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block h-100" alt="Exotic Fruits" />
+                    <div class="carousel-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide="prev">
+                <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide="next">
+                <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleTouch" data-mdb-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -62,17 +57,65 @@ function Home() {
 export default Home;
 
 
-{/* <div class="cards__">
-                <div class="cards__item">
-                Since breadcrumbs provide a navigation, it’s a good idea to add a meaningful label such as aria-label="breadcrumb"
-                </div>
-                <div class="cards__item">
-                    abc
-                </div>
-                <div class="cards__item">
-                    abc
-                </div>
-                <div class="cards__item">
-                    abc
-                </div>
-            </div> */}
+{/* <div class="text-typing">
+<h1>SAIGON SKY</h1>
+</div>
+<div class="text-typing">
+<p>SPECIAL - GOOD - SMART</p>
+</div> */}
+
+
+
+
+
+        //     <div className="slide-home">
+        //     <div id="carouselExampleCrossfade" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+                // <div class="text-typing">
+                //     <h1>SAIGON SKY</h1>
+                // </div>
+                // <div class="text-typing">
+                //     <p>SPECIAL - GOOD - SMART</p>
+                // </div>
+        //         <div class="carousel-indicators">
+        //             <button
+        //                 type="button"
+        //                 data-mdb-target="#carouselExampleCrossfade"
+        //                 data-mdb-slide-to="0"
+        //                 class="active"
+        //                 aria-current="true"
+        //                 aria-label="Slide 1"
+        //             ></button>
+        //             <button
+        //                 type="button"
+        //                 data-mdb-target="#carouselExampleCrossfade"
+        //                 data-mdb-slide-to="1"
+        //                 aria-label="Slide 2"
+        //             ></button>
+        //             <button
+        //                 type="button"
+        //                 data-mdb-target="#carouselExampleCrossfade"
+        //                 data-mdb-slide-to="2"
+        //                 aria-label="Slide 3"
+        //             ></button>
+        //         </div>
+        //         <div class="carousel-inner">
+        //             <div class="carousel-item active" data-mdb-interval="2000">
+        //                 <img src="/assets/images/bia1.png" class="d-block h-100" alt="Wild Landscape" />
+        //             </div>
+        //             <div class="carousel-item" data-mdb-interval="2000">
+        //                 <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block h-100" alt="Camera" />
+        //             </div>
+        //             <div class="carousel-item" data-mdb-interval="2000">
+        //                 <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block h-100" alt="Exotic Fruits" />
+        //             </div>
+        //         </div>
+        //         <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide="prev">
+        //             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        //             <span class="visually-hidden">Previous</span>
+        //         </button>
+        //         <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide="next">
+        //             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        //             <span class="visually-hidden">Next</span>
+        //         </button>
+        //     </div>
+        // </div>

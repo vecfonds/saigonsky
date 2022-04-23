@@ -1,68 +1,76 @@
 import React from "react";
-import '../App.css';
+import "../App.css";
 
 function Header() {
     return (
         <div class="topnav">
             <input type="checkbox" hidden name="" id="nav__input" />
 
-            <div>
-                <ul class="dropdown">
-                    <li><a href="">GIỚI THIỆU</a></li>
-                    <li>
-                        <div>SẢN PHẨM</div>
-                        <ul>
-                            <li>Layout</li>
-                            <li>Input</li>
-                            <li>
-                                <div>Navigation</div>
-                                <ul>
-                                    <li>Breadcrumb</li>
-                                    <li>Dropdown</li>
-                                    <li>Menu</li>
-                                    <li>Nested dropdown</li>
-                                </ul>
-                            </li>
-                            <li>DỰ ÁN</li>
-                            <li>Feedback</li>
-                        </ul>
-                    </li>
-                    <li>DỰ ÁN</li>
-                </ul>
-            </div>
+            <ul class="dropdown">
+                <li>
+                    <a href="">GIỚI THIỆU</a>
+                    <div className="line"></div>
+                </li>
+                <li>
+                    <a href="">SẢN PHẨM</a>
+                    <div className="line"></div>
+                    <ul>
+                        <li>
+                            <a href="">Layout</a>
+                        </li>
+                        <li>Input</li>
+                        <li>
+                            <div>Navigation</div>
+                            <ul>
+                                <li>
+                                <a href="">Breadcrumb</a>
+                                </li>
+                                <li>Dropdown</li>
+                                <li>Menu</li>
+                                <li>Nested dropdown</li>
+                            </ul>
+                        </li>
+                        <li>DỰ ÁN</li>
+                        <li>Feedback</li>
+                    </ul>
+                </li>
+                <li>DỰ ÁN</li>
+            </ul>
             <div class="trans">
-                <a><img src="/assets/images/logo_SGS.png" alt="logo" /></a>
+                <a>
+                    <img src="/assets/images/logo_SGS.png" alt="logo" />
+                </a>
             </div>
-            <div>
-                <ul class="dropdown">
-                    <li>TIN TỨC</li>
-                    <li>
-                        <div>LIÊN HỆ</div>
-                        <ul>
-                            <li>Layout</li>
-                            <li>Input</li>
-                            <li>
-                                <div>Navigation</div>
-                                <ul>
-                                    <li>Breadcrumb</li>
-                                    <li>Dropdown</li>
-                                    <li>Menu</li>
-                                    <li>Nested dropdown</li>
-                                </ul>
-                            </li>
-                            <li>Display</li>
-                            <li>Feedback</li>
-                        </ul>
-                    </li>
-                    <li>NGHỀ NGHIỆP</li>
-                </ul>
-            </div>
+            <ul class="dropdown">
+                <li>TIN TỨC</li>
+                <li>
+                    <div>LIÊN HỆ</div>
+                    <ul>
+                        <li>Layout</li>
+                        <li>Input</li>
+                        <li>
+                            <div>Navigation</div>
+                            <ul>
+                                <li>Breadcrumb</li>
+                                <li>Dropdown</li>
+                                <li>Menu</li>
+                                <li>Nested dropdown</li>
+                            </ul>
+                        </li>
+                        <li>Display</li>
+                        <li>Feedback</li>
+                    </ul>
+                </li>
+                <li>NGHỀ NGHIỆP</li>
+            </ul>
 
             <div class="nav__btn">
                 <label for="nav__input">
                     <i class="fas fa-bars"></i>
                 </label>
             </div>
+
+            
 
             <label for="nav__input" class="nav__overlay"></label>
 
@@ -73,7 +81,9 @@ function Header() {
                 <ul class="nav__mobile-list">
                     <li class="nav__mobile-item">GIỚI THIỆU</li>
                     <li class="nav__mobile-item">
-                        <div>SẢN PHẨM <i class="fas fa-angle-down"></i></div>
+                        <div>
+                            SẢN PHẨM <i class="fas fa-angle-down"></i>
+                        </div>
                         <ul class="nav__mobile-list">
                             <li class="nav__mobile-item">Layout</li>
                             <li class="nav__mobile-item">Input</li>
@@ -114,13 +124,10 @@ function Header() {
                 </ul>
             </div>
         </div>
-    )
+    );
 }
 
 export default Header;
-
-
-
 
 // import React from "react";
 // import '../App.css';
