@@ -10,10 +10,13 @@
 
 body {
     min-height: 100vh;
-    width: 100vw;
     font-family: "Times New Roman", "Times", serif;
     /* "Times New Roman", "Times", serif */
     font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
 }
 
 :root {
@@ -367,32 +370,37 @@ li:hover .line{
 
 /***********************SLIDE HOME***************/
 .slider{
-    /* position: absolute;
-    top: 0;
-    z-index: -1; */
     position: relative;
     
 }
 
-.slider img{
-    width: 100%;
+
+/*Mobile*/
+
+@media screen and (max-width: 46.1875em) {
+
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
 }
 
 /*******************TEXT HEADER****************/
 
 .slider .text-content{
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     color: #0A256C;
-}
-
-.text-content{
     display: flex;
 }
+
 
 .text-content h1 {
     font-weight: 700;
@@ -407,63 +415,13 @@ li:hover .line{
 
 .text-content p {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 42px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 10s steps(19) infinite, blink 1s infinite;
+    animation: typing 8s steps(18) infinite, blink 1s infinite;
     /* text-shadow: 0 0 100px yellow;*/
 }
 
-
-.text-typing {
-    position: absolute;
-    z-index: 10;
-    margin: 200px auto;
-    font-family: monospace;
-}
-
-.text-typing h1 {
-    position: absolute;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    font-size: 140px;
-    white-space: nowrap;
-    overflow: hidden;
-    /* animation: typingh 5s steps(10) infinite, blinkh 1s infinite; */
-    /* text-shadow: 0 0 100px yellow;*/
-}
-
-/* @keyframes typingh {
-	0%,
-	100% {
-		width: 0%;
-	}
-	70%,
-	90% {
-		width: 100%;
-	}
-}
-
-@keyframes blinkh {
-	0%,
-	100% {
-		border-right: 10px solid transparent;
-	}
-	50% {
-		border-right: 10px solid #96ee1c;
-	}
-}  */
-
-.text-typing p {
-    color: rgb(0, 0, 0);
-    margin: 200px auto;
-    font-weight: 700;
-    font-size: 70px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 10s steps(19) infinite, blink 1s infinite;
-    /* text-shadow: 0 0 100px yellow;*/
-}
 
 @keyframes typing {
 
@@ -486,44 +444,34 @@ li:hover .line{
     }
 
     50% {
-        border-right: 10px solid #96ee1c;
+        border-right: 10px solid #0A256C;
+    }
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 46.1875em) {
+    .text-content{
+        display: none;
+    }
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .text-content{
+        display: none;
     }
 }
 
 
 
-/***********************CARD*********************/
-
-.cards__ {
-    display: flex;
-    /* Put a card in the next row when previous cards take all width */
-    flex-wrap: wrap;
-    margin-left: -8px;
-    margin-right: -8px;
-    padding-top: 100px;
-}
-
-.cards__item {
-    /* There will be 4 cards per row */
-    flex-basis: 25%;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-
-/*Mobile*/
-
-@media screen and (max-width: 46.1875em) {}
-
-
-/*Tablet*/
-
-@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
-
-
 
 /*********************************INTRODUCE****************************/
-.intro {
+
+/*********Part1*************/
+/* .intro {
     padding-top: 50px;
     padding-bottom: 30px;
 }
@@ -535,6 +483,7 @@ li:hover .line{
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px 0;
+    background: #000;
 }
 
 .emphasized-block {
@@ -546,12 +495,12 @@ li:hover .line{
 
 .emphasized-block .title {
     padding-top: 20px;
-    color: black;
+    color: white;
 }
 
 .emphasized-block .title i,
 .emphasized-block .content i {
-    color: #003067;
+    color: white;
 }
 
 .emphasized-block .title h4 {
@@ -561,16 +510,231 @@ li:hover .line{
 }
 
 .emphasized-block .content {
-    color: black;
+    color: white;
     font-size: large;
     margin: 0 100px;
+
+} */
+
+
+/*********part2*************/
+.intro_content{
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #000;
+}
+
+.introduce{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.introduce .card_{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+    border: 3px solid rgba(0, 48, 102, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 
+.introduce .card_ .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 48, 102, 1);/**/
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.01);
+    border-radius: 10px;
+}
+
+.introduce .card_:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #003067;
+    border-radius: 10px;
+}
+
+.introduce .card_ .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(255,255,255,0.5);
+    font-weight: 700;
+    transition: opacity 0.3s linear;
+}
+
+.introduce .card_:hover .imgBx:before{
+    opacity: 0;
+}
+
+.introduce .card_ .imgBx img{
+    width: 150px;
+    height: 120px;
+
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+}
+
+.introduce .card_:hover .imgBx img{
+    max-width: 75px;
+}
+
+.introduce .card_ .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+}
+
+.introduce .card_:nth-of-type(2) .content{
+    margin-right: 4px;
+    overflow-y: scroll;
+}
+
+.introduce .card_:nth-of-type(2) .content::-webkit-scrollbar{
+    width: 0;
+}
+
+.introduce .card_ .content h2{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .introduce{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .introduce .card_{
+        width: 400px;
+    }
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 46.1875em) {
+    .introduce{
+        width: 100%;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .introduce .card_{
+        width: 400px;
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .introduce .card_ .imgBx{
+        position: relative;
+    }
+
+    .introduce .card_ .imgBx,
+    .introduce .card_:hover .imgBx{
+        width: 100%;
+        height: 200px;
+        transform: scale(1.015);
+        left: 0;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+    }
+
+    .introduce .card_ .imgBx img,
+    .introduce .card_:hover .imgBx img{
+        max-width: 100px;
+    }
+
+    .introduce .card_ .content{
+        position: relative;
+        width: 100%;
+    }
+
+    .introduce .card_ .imgBx:before{
+        opacity: 0;
+    }
+}
 
 
 
+/*****FOOTER*******/
+.conn-social{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* padding: 10px 0 40px 0; */
+    margin: 0 20px;
+    position: relative;
+}
+
+.conn-social .conn-text{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.conn-social .wrapper{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.footer{
+    background: #003067;
+    color: white;
+    padding-top: 30px;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 46.1875em) {
+    .conn-social{
+        justify-content: center;
+        margin: 0;
+    }
+
+    .conn-text{
+        display: none;
+    }
+}
 
 
 /********************icon****************/

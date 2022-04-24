@@ -16,12 +16,15 @@ import { hover } from '@testing-library/user-event/dist/hover';
 import CardEffect from './component/learn/cardeffect';
 import CardEffect2 from './component/learn/cardeffect2';
 
+import Slider from './component/test';
+
 function App() {
   return (
-      <>
+    <>
       <Header />
-      <Home />
-      </>
+      <Products />
+      <Footer />
+    </>
   );
 }
 

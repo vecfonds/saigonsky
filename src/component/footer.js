@@ -3,12 +3,9 @@ import React from "react";
 function Footer() {
     return (
         <div>
-            <hr />
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-                <div class="me-5 d-none d-lg-block">
-                    <span>Get connected with us on social networks:</span>
-                </div>
-
+            {/* <hr /> */}
+            {/* <section class="conn-social">               
+                <div className="conn-text">Get connected with us on social networks:</div>
                 <div class="wrapper">
                     <a class="icon facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -32,9 +29,9 @@ function Footer() {
                     </a>
                 </div>
 
-            </section>
+            </section> */}
 
-            <section class="">
+            <section class="footer">
                 <div class="container text-center text-md-start mt-5">
                     <div class="row mt-3">
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
@@ -108,3 +105,35 @@ function Footer() {
 export default Footer;
 
 
+
+
+
+// <section class="d-flex justify-content-center justify-content-lg-between p-5 border-bottom">
+//                 <div class="me-5 d-none d-lg-block">
+//                     <span>Get connected with us on social networks:</span>
+//                 </div>
+
+//                 <div class="wrapper">
+//                     <a class="icon facebook">
+//                         <i class="fab fa-facebook-f"></i>
+//                         <span class="tooltip">Facebook</span>
+//                     </a>
+//                     <a class="icon github">
+//                         <i class="fab fa-github"></i>
+//                         <span class="tooltip">Github</span>
+//                     </a>
+//                     <a class="icon twitter">
+//                         <i class="fab fa-twitter"></i>
+//                         <span class="tooltip">Twitter</span>
+//                     </a>
+//                     <a class="icon instagram">
+//                         <i class="fab fa-instagram"></i>
+//                         <span class="tooltip">Instagram</span>
+//                     </a>
+//                     <a class="icon youtube">
+//                         <i class="fab fa-youtube"></i>
+//                         <span class="tooltip">Youtube</span>
+//                     </a>
+//                 </div>
+
+//             </section>
