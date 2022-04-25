@@ -40,6 +40,75 @@ function Products() {
                </div>
                <h1 className="title">TLP02310B</h1>
             </div>
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h1 className="title">TLP02310B</h1>
+            </div>
+
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h1 className="title">TLP02310B</h1>
+            </div>
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h1 className="title">TLP02310B</h1>
+            </div>
+
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h1 className="title">TLP02310B</h1>
+            </div>
+
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h1 className="title">TLP02310B</h1>
+            </div>
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h1 className="title">TLP02310B</h1>
+            </div>
          </div>
       </div>
    );

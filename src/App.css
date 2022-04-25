@@ -13,6 +13,7 @@ body {
     font-family: "Times New Roman", "Times", serif;
     /* "Times New Roman", "Times", serif */
     font-family: "Poppins", sans-serif;
+    background: #E9ECEF;
 }
 
 body::-webkit-scrollbar{
@@ -48,6 +49,9 @@ body::-webkit-scrollbar{
 
     z-index: 1000;
     font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
 
     /* top: 0;
     width: 100%;
@@ -695,11 +699,9 @@ li:hover .line{
 
 
 /*****FOOTER*******/
-.conn-social{
+/* .conn-social{
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    /* padding: 10px 0 40px 0; */
     margin: 0 20px;
     position: relative;
 }
@@ -720,12 +722,85 @@ li:hover .line{
     background: #003067;
     color: white;
     padding-top: 30px;
+} */
+
+.footer{
+    /* width: 100%; */
+    background: #003067;
+    color: white;
 }
+
+.footer hr{
+    margin: 0;
+}
+
+.conn-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-component{
+    width: 290px;
+}
+
+.footer-component:nth-of-type(2),
+.footer-component:nth-of-type(3){
+    width: 190px;
+}
+
+.footer-component a{
+    text-decoration: none;
+    color: inherit!important;
+}
+
+
+.footer-component h6{
+    text-transform: uppercase!important;
+    margin-bottom: 1.5rem!important;
+    font-weight: 700!important;
+    font-size: 1em;
+}
+
 
 
 /*Mobile*/
 
 @media screen and (max-width: 46.1875em) {
+    .footer-main{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-component{
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    .conn-social{
+        justify-content: center;
+    }
+
+    .conn-text{
+        display: none;
+    }
+}
+
+/*Mobile*/
+
+/* @media screen and (max-width: 46.1875em) {
     .conn-social{
         justify-content: center;
         margin: 0;
@@ -734,7 +809,7 @@ li:hover .line{
     .conn-text{
         display: none;
     }
-}
+} */
 
 
 /********************icon****************/
@@ -833,20 +908,32 @@ li:hover .line{
 
 /************PRODUCTS**************/
 .product-page{
+    position: relative;
     display: flex;
+    margin-top: 77.6px;
 }
 
 .search-product{
+    /* position: absolute;
     top: 0;
     left: 0;
-    background: #000;
-    flex: 100px;
+    bottom: 0;
+    width: 300px; */
+    background: white;
+    flex: 200px;
 }
 
 .products{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    /* position: absolute;
+    left: 300px;
+    top: 0;
+    bottom: 0;
+    right: 0; */
+    flex: 8;
 }
 
 .box{
