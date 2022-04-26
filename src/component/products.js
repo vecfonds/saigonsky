@@ -5,7 +5,34 @@ function Products() {
    return (
       <div className="product-page">
          <div className="search-product">
-            
+            <div class="search-box">
+               <input type="text" class="search-box__input" />
+               <button class="search-box__button">
+                  <i class="fas fa-search"></i>
+               </button>
+            </div>
+            <div className="filter-category-product">
+               <div className="filter-product">Danh mục sản phẩm:</div>
+               <ul>
+                  <li>
+                     <input type="checkbox" id="khoa" name="khoa" />
+                     <label for="khoa">Khóa</label>
+                  </li>
+
+                  <li>
+                     <input type="checkbox" id="lavabo" name="lavabo" />
+                     <label for="lavabo">Lavabo</label>
+                  </li>
+
+                  <li>
+                     <input type="checkbox" id="bontam" name="bontam" />
+                     <label for="bontam">Bồn tắm</label>
+                  </li>
+               </ul>
+            </div>
+            <div className="filter-product">Lọc theo giá</div>
+            <div className="filter-product">Lọc theo màu</div>
+            <div className="filter-product">Lọc theo hãng</div>
          </div>
          <div className="products">
             <div className="box">
@@ -16,7 +43,17 @@ function Products() {
                <div className="image">
                   <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
                </div>
-               <h1 className="title">TLP02310B</h1>
+               <h2 className="title">TLP02310B</h2>
+            </div>
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h2 className="title">TLP02310B</h2>
             </div>
 
             <div className="box">
@@ -27,7 +64,7 @@ function Products() {
                <div className="image">
                   <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
                </div>
-               <h1 className="title">TLP02310B</h1>
+               <h2 className="title">TLP02310B</h2>
             </div>
 
             <div className="box">
@@ -38,7 +75,7 @@ function Products() {
                <div className="image">
                   <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
                </div>
-               <h1 className="title">TLP02310B</h1>
+               <h2 className="title">TLP02310B</h2>
             </div>
 
             <div className="box">
@@ -49,19 +86,7 @@ function Products() {
                <div className="image">
                   <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
                </div>
-               <h1 className="title">TLP02310B</h1>
-            </div>
-
-
-            <div className="box">
-               <div className="top"></div>
-               <div className="right"></div>
-               <div className="bottom"></div>
-               <div className="left"></div>
-               <div className="image">
-                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
-               </div>
-               <h1 className="title">TLP02310B</h1>
+               <h2 className="title">TLP02310B</h2>
             </div>
 
             <div className="box">
@@ -72,31 +97,7 @@ function Products() {
                <div className="image">
                   <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
                </div>
-               <h1 className="title">TLP02310B</h1>
-            </div>
-
-
-            <div className="box">
-               <div className="top"></div>
-               <div className="right"></div>
-               <div className="bottom"></div>
-               <div className="left"></div>
-               <div className="image">
-                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
-               </div>
-               <h1 className="title">TLP02310B</h1>
-            </div>
-
-
-            <div className="box">
-               <div className="top"></div>
-               <div className="right"></div>
-               <div className="bottom"></div>
-               <div className="left"></div>
-               <div className="image">
-                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
-               </div>
-               <h1 className="title">TLP02310B</h1>
+               <h2 className="title">TLP02310B</h2>
             </div>
 
             <div className="box">
@@ -107,8 +108,33 @@ function Products() {
                <div className="image">
                   <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
                </div>
-               <h1 className="title">TLP02310B</h1>
+               <h2 className="title">TLP02310B</h2>
             </div>
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h2 className="title">TLP02310B</h2>
+            </div>
+
+            <div className="box">
+               <div className="top"></div>
+               <div className="right"></div>
+               <div className="bottom"></div>
+               <div className="left"></div>
+               <div className="image">
+                  <img src="/assets/images/voichau.jpg" alt="giấy mưa" />
+               </div>
+               <h2 className="title">TLP02310B</h2>
+            </div>
+
+            
+
          </div>
       </div>
    );

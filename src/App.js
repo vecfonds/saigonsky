@@ -7,6 +7,7 @@ import Home from './component/home';
 import Introduce from './component/introduce';
 import ProductDetails from './component/productDetails';
 import Products from './component/products';
+import Breadcrumb from './component/breadcrumb';
 
 
 //learn
@@ -22,7 +23,10 @@ function App() {
   return (
     <>
       <Header />
-      <Products />
+      {/* <Breadcrumb />
+      <Products /> */}
+      <Home />
+      <Introduce />
       <Footer />
     </>
   );
