@@ -10,9 +10,9 @@
 
 body {
     min-height: 100vh;
-    font-family: "Times New Roman", "Times", serif;
     /* "Times New Roman", "Times", serif */
     font-family: "Poppins", sans-serif;
+    font-family: "Times New Roman", "Times", serif;
     background: #E9ECEF;
 }
 
@@ -35,16 +35,19 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: #ffffff;
     font-size: medium;
-
-
+    
+    
     /* background-image: url('https://anhdepfree.com/wp-content/uploads/2022/01/mau-background-xanh-duong-doc-dao_949045.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    
+    color: #ffffff;
     background: linear-gradient(to right, #003067, #1A4F8E, #003067);
+
+    /* color: var(--primary-colorZ);
+    background: white; */
     /* position: fixed;
     width: 100%; */
 
@@ -157,7 +160,7 @@ li:hover .line{
     color: black;
 }
 
-.dropdown li a:hover {
+.dropdown li:hover a {
     /* background-color: rgba(0, 0, 0, 0.1); */
     /* color: black; */
     color: #AB9E64;
@@ -386,8 +389,8 @@ li:hover .line{
 
 /***********************SLIDE HOME***************/
 .slider{
+    margin-top: 77.6px;
     position: relative;
-    
 }
 
 
@@ -559,9 +562,10 @@ li:hover .line{
     display: flex;
     width: 45%;
     margin: 30px 0;
-    border: 3px solid rgba(0, 48, 102, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border: 3px solid rgba(0, 48, 102, 0.9); */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px 0 rgba(22, 13, 149, 0.2), 
+                0 6px 20px 0 rgba(15, 21, 204, 0.19);
 
 }
 
@@ -572,14 +576,17 @@ li:hover .line{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 48, 102, 1);/**/
+    /* background: #171518; */
+    /**/
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #1B1464, #03FAF9,#FE16C7,#211C2F);
     transition: 0.5s ease-in-out;
     transform: scale(1.01);
-    border-radius: 10px;
+    /* border-radius: 10px; */
+
 }
 
 .introduce .card_:hover .imgBx{
@@ -587,9 +594,11 @@ li:hover .line{
     height: 150px;
     left: -75px;
     top: calc(50% - 75px);
-    transition: 0.5s ease-in-out;
-    background: #003067;
-    border-radius: 10px;
+    /* transition: 0.5s ease-in-out; */
+    /* background: #003067; */
+    /* border-radius: 10px; */
+    /* background: linear-gradient(135deg, #1B1464, #03FAF9,#FE16C7,#211C2F); */
+
 }
 
 .introduce .card_ .imgBx:before{
@@ -602,16 +611,18 @@ li:hover .line{
     font-size: 2em;
     color: rgba(255,255,255,0.5);
     font-weight: 700;
-    transition: opacity 0.3s linear;
+    transition: all 0.5s linear;
 }
 
 .introduce .card_:hover .imgBx:before{
     opacity: 0;
+    font-size: 0em;
+    
 }
 
 .introduce .card_ .imgBx img{
-    width: 150px;
-    height: 120px;
+    /* width: 150px;
+    height: 150px; */
 
     max-width: 100px;
     transition: 0.5s ease-in-out;
@@ -634,7 +645,6 @@ li:hover .line{
 }
 
 .introduce .card_:nth-of-type(2) .content{
-    margin-right: 4px;
     overflow-y: scroll;
 }
 
@@ -1012,7 +1022,7 @@ li:hover .line{
     text-align: center;
     padding: 10px 0;
     background: var(--primary-colorZ);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -1043,9 +1053,11 @@ li:hover .line{
     /* justify-content: center; */
     /* align-items: center; */
     flex-wrap: wrap;
+    /* width: 1020px; */
+    min-width: 1020px;
     width: 1020px;
     background: white;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     /* position: absolute;
@@ -1193,15 +1205,23 @@ li:hover .line{
 
 .product-essential {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    width: 100%;
+    justify-content: center;
 }
 
 .product-essential-img {
-    max-width: 100%;
+    /* max-width: 100%;
     max-height: 750px;
     margin: 0px auto;
     overflow: hidden;
-    flex: 1;
+    flex: 1; */
+
+    width: 550px;
+    height: 550px;
+    /* margin: 0 50px; */
+    padding-right: 15px;
+
 }
 
 .product-essential-img img {
@@ -1211,13 +1231,123 @@ li:hover .line{
     object-position: center;
 }
 .product-essential-information {
-    flex: 1;
+    /* flex: 1; */
+    width: 550px;
     padding: 0 0 10px 45px;
+
 
 }
 
 
 
+h1.product-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #222222;
+}
+
+.description{
+    font-size: 15px;
+    font-weight: normal;
+    color: #222;
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.info-title{
+    font-weight: 700;
+    width: 35%;
+    display: inline-block;
+}
 
 
+.info-value{
+    font-weight: 400;
+    vertical-align: top;
+}
 
+.price-info{
+    float: left;
+    clear: both;
+    padding-left: 0;
+
+    text-align: left;
+    font-size: 15px;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 0;
+}
+
+.price-info .price {
+    font-size: 15px !important;
+    vertical-align: top;
+}
+
+.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, .product-view .product-shop .price-box .full-product-price .price {
+    color: #636363;
+    font-size: 24px;
+}
+
+.catalog-product-view .product-view .price-info .price {
+    font-size: 15px !important;
+    vertical-align: top;
+}
+
+.additional-buttons {
+    clear: both;
+    display: flex;
+}
+
+.catalog-product-view .additional-buttons .compare-button {
+    margin-right: 10px;
+}
+.catalog-product-view .additional-buttons .compare-button, .catalog-product-view .additional-buttons .store-list-button {
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.catalog-product-view .additional-buttons .compare-button, .catalog-product-view .additional-buttons .store-list-button {
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.catalog-product-view .additional-buttons .compare-button>a, .catalog-product-view .additional-buttons .compare-button>.a-link, .catalog-product-view .additional-buttons .store-list-button>a, .catalog-product-view .additional-buttons .store-list-button>.a-link {
+    padding: 10px 65px 10px 40px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.btn-primary, .button {
+    background: none !important;
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #222;
+    color: #222 !important;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    min-width: 150px;
+}
+
+.catalog-product-view .additional-buttons .compare-button>a, .catalog-product-view .additional-buttons .compare-button>.a-link, .catalog-product-view .additional-buttons .store-list-button>a, .catalog-product-view .additional-buttons .store-list-button>.a-link {
+    background: #111 !important;
+    color: #fff !important;
+    padding: 9px 60px 9px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-decoration: none;
+    position: relative;
+}

@@ -23,10 +23,12 @@ function App() {
   return (
     <>
       <Header />
+      <Breadcrumb />
+      <Products />
+      {/* <Home />
+      <Introduce /> */}
       {/* <Breadcrumb />
-      <Products /> */}
-      <Home />
-      <Introduce />
+      <ProductDetails /> */}
       <Footer />
     </>
   );
