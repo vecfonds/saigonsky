@@ -22,6 +22,7 @@ import CardEffect2 from './Component/learn/cardeffect2';
 import Slider from './Component/Introduce/Slider/Slider';
 import Introduce from './Component/Introduce/Introduce/Introduce';
 import Brands from './Component/Introduce/Brands/Brands';
+import Partners from './Component/Introduce/Partners/Partners';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       {/* <Home /> */}
       <Introduce />
       <Brands />
+      <Partners />
       {/* <Breadcrumb />
       <ProductDetails /> */}
       <Footer />

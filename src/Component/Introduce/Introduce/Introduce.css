@@ -35,6 +35,21 @@
     font-weight: bold;
 }
 
+
+.button_about_us{
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 30px 7px;
+    border-radius: 30px;
+    background: #002f66;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1.5rem;
+}
+
+
+
 /*Tablet*/
 
 @media screen and (min-width: 46.25em) and (max-width: 63.9375em) {}
