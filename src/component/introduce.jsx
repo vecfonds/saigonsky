@@ -3,7 +3,7 @@ import '../App.css';
 
 function Introduce() {
     return (
-        <div>
+        <div style={{marginTop: '50px'}}>
             <h1 className="intro_content"><u>Về chúng tôi</u></h1>
             <div className="introduce">
                 <div className="card_">

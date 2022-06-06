@@ -21,12 +21,14 @@ body::-webkit-scrollbar{
 }
 
 :root {
+    --primary-colorI: #212529;
     --primary-colorZ: #003067;
     --facebook-color: #3b5999;
     --instagram-color: #e1306c;
     --youtube-color: #de463b;
     --twitter-color: #46c1f6;
     --github-color: #333;
+
 }
 
 /*************************HEADER***********************/

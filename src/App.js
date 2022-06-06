@@ -1,32 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Footer from './component/footer';
-import Header from './component/header';
-import Home from './component/home';
-import Introduce from './component/introduce';
-import ProductDetails from './component/productDetails';
-import Products from './component/products';
-import Breadcrumb from './component/breadcrumb';
+import Footer from './Component/footer';
+import Header from './Component/header';
+import Home from './Component/home';
+// import Introduce from './Component/introduce';
+import ProductDetails from './Component/productDetails';
+import Products from './Component/products';
+import Breadcrumb from './Component/breadcrumb';
 
 
 //learn
-import CartProduct from './component/learn/learncartproduct';
-import CardProfile from './component/learn/cardprofile';
+import CartProduct from './Component/learn/learncartproduct';
+import CardProfile from './Component/learn/cardprofile';
 import { hover } from '@testing-library/user-event/dist/hover';
-import CardEffect from './component/learn/cardeffect';
-import CardEffect2 from './component/learn/cardeffect2';
+import CardEffect from './Component/learn/cardeffect';
+import CardEffect2 from './Component/learn/cardeffect2';
 
-import Slider from './component/test';
+// import Slider from './Component/test';
+
+import Slider from './Component/Introduce/Slider/Slider';
+import Introduce from './Component/Introduce/Introduce/Introduce';
+import Brands from './Component/Introduce/Brands/Brands';
 
 function App() {
   return (
     <>
       <Header />
+      <Slider />
       {/* <Breadcrumb />
       <Products /> */}
-      <Home />
+      {/* <Home /> */}
       <Introduce />
+      <Brands />
       {/* <Breadcrumb />
       <ProductDetails /> */}
       <Footer />
