@@ -46,6 +46,13 @@
     display: inline-block;
     font-size: 16px;
     margin-top: 1.5rem;
+    transition: 0.2s;
+    border: 1px solid #002f66;
+}
+
+.button_about_us:hover{
+    color: #002f66;
+    background: white;
 }
 
 

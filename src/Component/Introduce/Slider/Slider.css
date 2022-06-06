@@ -1,5 +1,5 @@
 .slider{
-    margin-top: 77.6px;
+    margin-top: 10vh;
     position: relative;
 }
 
@@ -17,6 +17,7 @@
 .inner-content{
     display: flex;
 }
+
 
 
 .content{

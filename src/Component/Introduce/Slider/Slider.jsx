@@ -1,5 +1,6 @@
 import React from 'react'
 import './Slider.css'
+import { motion } from "framer-motion"
 
 
 const Slider = () => {
@@ -26,7 +27,14 @@ const Slider = () => {
 
             <div className="inner">
                 <div className="inner-content">
-                    <img src="/assets/images/slider/sliderlock.png" width={600} height={600} alt="lock" />
+                    <motion.div style={{ left: -500, position: 'relative' }} animate={{ left: 0 }} transition={{
+                        duration: 3,
+                        type: "spring",
+                    }} >
+
+                        <img src="/assets/images/slider/sliderlock.png" width={600} height={600} alt="lock" />
+                    </motion.div>
+
                     <div className="content">
                         <h2>Singapore's Fastest Growing</h2>
                         <h2>Smart Lock Brand</h2>
